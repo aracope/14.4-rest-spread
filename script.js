@@ -34,20 +34,30 @@ const doubleAndReturnArgs = (array, ...arguments) => [...array, ...arguments.map
 and return a new array without that item. */
 
 function removeRandom(items) {
-  let 
+  if (array.length === 0) return array; 
+  const randomIndex = Math.floor(Math.random() * array.length); // Generates a random index.
+    return [...array.slice(0, randomIndex), ...array.slice(randomIndex + 1)]; 
 }
+
+const removeRandom = (items) => {
+  const index = Math.floor(Math.random() * items.length);
+  return [...items.slice(0, index), ...items.slice(index + 1)];
+};
+   
 
 /** Return a new array with every item in array1 and array2. */
 
 function extend(array1, array2) {
-  let extend = (array1, array2) => { return [...array1, ...array2]}
+  return [...array1, ...array2];
 }
+
+const extend = (array1, array2) => { return [...array1, ...array2]}
 
 /** Return a new object with all the keys and values
 from obj and a new key/value pair */
 
 function addKeyVal(obj, key, val) {
-
+  
 }
 
 
