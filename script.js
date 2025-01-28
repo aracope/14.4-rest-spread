@@ -44,7 +44,6 @@ const removeRandom = (items) => {
   return [...items.slice(0, index), ...items.slice(index + 1)];
 };
    
-
 /** Return a new array with every item in array1 and array2. */
 
 function extend(array1, array2) {
@@ -57,7 +56,7 @@ const extend = (array1, array2) => { return [...array1, ...array2]}
 from obj and a new key/value pair */
 
 function addKeyVal(obj, key, val) {
-  
+  return { ...obj, [key]: val};
 }
 
 
