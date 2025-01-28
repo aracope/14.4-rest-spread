@@ -34,13 +34,13 @@ const doubleAndReturnArgs = (array, ...arguments) => [...array, ...arguments.map
 and return a new array without that item. */
 
 function removeRandom(items) {
-
+  let 
 }
 
 /** Return a new array with every item in array1 and array2. */
 
 function extend(array1, array2) {
-
+  let extend = (array1, array2) => { return [...array1, ...array2]}
 }
 
 /** Return a new object with all the keys and values
