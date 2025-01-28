@@ -94,3 +94,8 @@ function update(obj, key, val) {
   newObj[key] = val;
   return newObj;     
 }
+
+const update = (obj, key, val) => {  
+  let newObj = { ...obj }
+  newObj[key] = val;
+  return newObj;}
