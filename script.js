@@ -59,6 +59,10 @@ function addKeyVal(obj, key, val) {
   return { ...obj, [key]: val};
 }
 
+const addKeyVal = (obj, key, val) => { 
+  let newObject = {...obj};
+  newObject[key] = val;
+return newObject; }
 
 /** Return a new object with a key removed. */
 
