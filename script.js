@@ -67,9 +67,10 @@ return newObject; }
 /** Return a new object with a key removed. */
 
 function removeKey(obj, key) {
-
+  let newObject = {...obj};
+  delete newObj[key];
+  return newObject;
 }
-
 
 /** Combine two objects and return a new object. */
 
